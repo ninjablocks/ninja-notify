@@ -20,7 +20,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "unirest": "^0.2.6"
+    "unirest": "~0.2.6"
   },
   "config": {
     "pushoverToken": "aYWVuW753MBoe5U91XskZWjP9Eq6Zi",
