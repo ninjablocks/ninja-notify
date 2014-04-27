@@ -1,0 +1,29 @@
+{
+  "name": "ninja-notify",
+  "version": "0.0.3",
+  "description": "Ninja Blocks driver to notify Android/iOS/Desktop devices using Pushover (others soon)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ninjablocks/ninja-notify.git"
+  },
+  "keywords": [
+    "Ninja",
+    "Blocks",
+    "Notify",
+    "Notification"
+  ],
+  "author": "Elliot Shepherd <elliot@ninjablocks.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "unirest": "^0.2.6"
+  },
+  "config": {
+    "pushoverToken": "aYWVuW753MBoe5U91XskZWjP9Eq6Zi",
+    "pushover": []
+  }
+}
