@@ -1,6 +1,6 @@
 {
   "name": "ninja-notify",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Ninja Blocks driver to notify Android/iOS/Desktop devices using Pushover (others soon)",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "config": {
     "pushoverToken": "aYWVuW753MBoe5U91XskZWjP9Eq6Zi",
-    "pushover": []
+    "pushover": [],
+    "pushbullet": []
   }
 }

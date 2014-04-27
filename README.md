@@ -3,14 +3,17 @@ ninja-notify
 
 A Ninja Blocks driver that sends notifications to Android, iOS and desktops.
 
-Currently only supports Pushover, but more will be added as needed.
+Currently only supports Pushover and Pushbullet, but more will be added as needed.
 
-# Usage
+# Usage (Pushbullet)
+Use the driver config button in the Dashboard to add you Pushbullet API key.
+
+# Usage (Pushover)
 Use the driver config button in the Dashboard to add you Pushover User Key and optionally a device or group id.
 
 It will appear as a text display device, just send text to notify your device(s).
 
-# Advanced usage
+# Advanced usage (Pushover only)
 If you send JSON to the text display device, you can set extra properties.
 
 From https://pushover.net/api:
@@ -24,6 +27,9 @@ Some optional parameters may be included:
  - sound - the name of one of the sounds supported by device clients to override the user's default sound choice
 
 # Changelog
+
+0.0.1
+ - Pushbullet support
 
 0.0.0
  - Initial version.
