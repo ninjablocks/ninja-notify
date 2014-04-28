@@ -1,7 +1,7 @@
 {
   "name": "ninja-notify",
-  "version": "0.0.1",
-  "description": "Ninja Blocks driver to notify Android/iOS/Desktop devices using Pushover (others soon)",
+  "version": "0.0.2",
+  "description": "Ninja Blocks driver to notify Android/iOS/Desktop devices using Pushover, or SMS via Nexmo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,11 +20,11 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "unirest": "~0.2.6"
+    "unirest": "~0.2.6",
+    "underscore": "~1.6.0"
   },
   "config": {
     "pushoverToken": "aYWVuW753MBoe5U91XskZWjP9Eq6Zi",
-    "pushover": [],
-    "pushbullet": []
+    "services": []
   }
 }
