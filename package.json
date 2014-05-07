@@ -25,6 +25,6 @@
   },
   "config": {
     "pushoverToken": "aYWVuW753MBoe5U91XskZWjP9Eq6Zi",
-    "services": []
+    "services": {}
   }
 }
