@@ -28,7 +28,7 @@ Driver.prototype.initService = function(id) {
 
   if (this.devices[config.id]) return;
 
-  this.log.info('Initialisng service', id, config);
+  this.log.info('Initialising service', id, config);
 
   var driver = this;
 
