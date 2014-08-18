@@ -28,7 +28,7 @@ Driver.prototype.initService = function(id) {
 
   if (this.devices[config.id]) return;
 
-  this.log.info('Initialisng service', id, config);
+  this.log.info('Initialising service', id, config);
 
   var driver = this;
 
@@ -37,6 +37,7 @@ Driver.prototype.initService = function(id) {
   var device = new Device(config.service + config.id, config.name);
   device.log = this.app.log;
   device.write = function(data) {
+    var self = this;
 
     if (typeof data === 'string') {
       try {
@@ -50,6 +51,7 @@ Driver.prototype.initService = function(id) {
 
     service.send(data, config, driver.app, function(err) {
       if (err) {
+        self.log.error("There was an error sending the message '%s' via notification service [%s]: %s", data.message, id, err);
         driver.emit('announcement',{
           "contents": [
             { "type": "heading",      "text": "Failed to send notification" },
